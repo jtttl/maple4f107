@@ -12,7 +12,7 @@ monitor flash device = STM32F107VC
 # Enable FlashDL and FlashBPs
 monitor flash download = 1
 monitor flash breakpoints = 1
-load Debug/first.elf
+
 # Clear all pendig breakpoints
 monitor clrbp
 
@@ -21,6 +21,9 @@ monitor endian little
 
 # Set JTAG speed to 5 kHz
 monitor speed 1000
+
+load Debug/first.elf
+monitor sleep 100
 
 # Reset the target
 monitor reset
