@@ -15,7 +15,7 @@
 **
 **  Environment : Atollic TrueSTUDIO(R)
 **
-**  Distribution: The file is distributed “as is,” without any warranty
+**  Distribution: The file is distributed æ³s is,ï¿½without any warranty
 **                of any kind.
 **
 **  (c)Copyright Atollic AB.
@@ -76,6 +76,17 @@ SECTIONS
     _etext = .;        /* define a global symbols at end of code */
   } >FLASH
 
+	
+	.initcalls :
+	{
+		 initcall_start = .;
+		KEEP(*(initcall0))
+		KEEP(*(initcall1))
+		KEEP(*(initcall2))
+		KEEP(*(initcall3))
+		 initcall_end = .;
+	} >FLASH
+	
 
    .ARM.extab   : { *(.ARM.extab* .gnu.linkonce.armextab.*) } >FLASH
     .ARM : {

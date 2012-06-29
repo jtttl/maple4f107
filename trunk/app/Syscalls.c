@@ -242,8 +242,12 @@ int _write(int file, char *ptr, int len) {
     case STDOUT_FILENO: /*stdout*/
         for (n = 0; n < len; n++) {
 #if STDOUT_USART == 1
-            while ((USART1->SR & USART_FLAG_TC) == (uint16_t)RESET) {}
-            USART1->DR = (*ptr++ & (uint16_t)0x01FF);
+        	char ch = (*ptr++ & (uint16_t)0x01FF);
+			if(ch == '\n')
+					console_putc('\r');
+			console_putc(ch);
+            //while ((USART1->SR & USART_FLAG_TC) == (uint16_t)RESET) {}
+            //USART1->DR = (*ptr++ & (uint16_t)0x01FF);
 #elif  STDOUT_USART == 2
             while ((USART2->SR & USART_FLAG_TC) == (uint16_t) RESET) {
             }
@@ -257,8 +261,13 @@ int _write(int file, char *ptr, int len) {
     case STDERR_FILENO: /* stderr */
         for (n = 0; n < len; n++) {
 #if STDERR_USART == 1
-            while ((USART1->SR & USART_FLAG_TC) == (uint16_t)RESET) {}
-            USART1->DR = (*ptr++ & (uint16_t)0x01FF);
+        	char ch = (*ptr++ & (uint16_t)0x01FF);
+        	if(ch == '\n')
+        			console_putc('\r');
+        	console_putc(ch);
+
+            //while ((USART1->SR & USART_FLAG_TC) == (uint16_t)RESET) {}
+            //USART1->DR = (*ptr++ & (uint16_t)0x01FF);
 #elif  STDERR_USART == 2
             while ((USART2->SR & USART_FLAG_TC) == (uint16_t) RESET) {
             }
