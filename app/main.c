@@ -4,7 +4,6 @@
 #include "serial.h"
 #include "timer.h"
 
-
 //======================================【任务定义】==================================
 #define  StartJob_STK_SIZE		128      	//启动任务堆栈大小
 #define  SYSCLK_FREQ_72MHz  72000000
@@ -50,6 +49,7 @@ static BOOL SysClockCheck(void)
 //启动任务============================================================================
 void StartJob(void ) 
 {
+
 	start_sys_timer();
 	while(1)
 	{
