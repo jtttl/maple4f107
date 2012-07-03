@@ -1,13 +1,17 @@
-#summary One-sentence summary of this page.
+#summary eclipse cdt的安装和配置说明
 
 = Introduction =
 
-Add your content here.
+eclipse cdt的默认设置并不是针对嵌入式开发，在开始使用前，请按照下面的步骤来配置eclipse。
 
 
-= Details =
+== 工作环境配置说明 ==
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+ # Open Eclipse preferences: “Window→Preferences”.
+ # Navigate the left tree into “C/C++→Code Analysis” and disable everything, without doing this you will see a lot of Errors and Warnings from the static analyzer mixed to the errors found by the compiler and that is very confusing.
+ # Navigate the left tree into “C/C++→New CDT Project Wizard→Makefile Project” then select the “Discovery Options” tab. Select “Automatic discovery of paths and symbols” and then “GCC per project scanner info profile”. This will enable Eclipse CDT to automatically find all the projects paths when the project is first compiled.
+ # Select the “Behaviour” tab and select “Use parallel build” then “Use optimal jobs number”. This will enable the projects build using all the available cores, much much faster.
+ # Navigate the left tree into “Run/Debug→Launching→Default Launchers”.
+ # Select “GDB Hardware Debugging→[debug]” then select “Standard GDB Hardware Debugging Launcher”. This will select the proper debugging mode when using various extensions plugins like the ChibiOS/RT debugging plugin.
+ # Press “Apply” and close the properties dialog.
+Note that the above settings will be copied into newly created projects but will not affect existing projects. You can set the same options into existing project's properties.
