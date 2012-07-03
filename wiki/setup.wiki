@@ -3,6 +3,8 @@
 
 这篇文章讲解了开发环境的搭建步骤，以及相关工具的下载地址和配置方法
 
+Sections:
+<wiki:toc max_depth="2"/>
 
 == 1、先下载必备的工具==
  * elipse 和 c++开发插件 [http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/juno/R/eclipse-cpp-juno-win32.zip 下载地址]
@@ -10,11 +12,11 @@
  * [http://www.yagarto.de/ Yagarto(arm-none-eabi-gcc) arm的开发工具链]
  * [http://opensource.zylin.com/embeddedcdt.html zylincdt gdb调试插件]
 
-==2、eclipse cdt的安装和配置==
+== 2、eclipse cdt的安装和配置 ==
  eclipse cdt下载后，无需安装，解压后运行根目录下的eclipse.exe即可,为了支持arm的开发还需要做一些针对性的设置。请点击这里查看详细说明 [eclipsesetup eclipse cdt详细配置说明]
 
-==3、arm插件的安装和配置==
+== 3、arm插件的安装和配置 ==
 
-==4、yagarto arm交叉工具链的安装和配置==
+== 4、yagarto arm交叉工具链的安装和配置 ==
 
-==5、gdb调试插件zylicdt的安装和配置==
+== 5、gdb调试插件zylicdt的安装和配置 ==
