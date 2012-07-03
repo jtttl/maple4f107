@@ -13,3 +13,9 @@
 
 ==2、eclipse cdt的安装和配置==
  eclipse cdt下载后，无需安装，解压后运行根目录下的eclipse.exe即可,为了支持arm的开发还需要做一些针对性的设置。请点击这里查看详细说明 [eclipsesetup eclipse cdt详细配置说明]
+
+==3、arm插件的安装和配置==
+
+==4、yagarto arm交叉工具链的安装和配置==
+
+==5、gdb调试插件zylicdt的安装和配置==
