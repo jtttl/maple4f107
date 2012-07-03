@@ -8,9 +8,7 @@
 = Details =
 
 先下载必备的工具
- *eclipse cdt ： elipse 和 c++开发插件
-   * [http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/juno/R/eclipse-cpp-juno-win32.zip 下载地址]
-
-arm-plugin
-Yagarto(arm-none-eabi-gcc)
-zylincdt
+ * elipse 和 c++开发插件 [http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/juno/R/eclipse-cpp-juno-win32.zip 下载地址]
+ * [http://sourceforge.net/projects/gnuarmeclipse/ eclipse 的arm开发插件]
+ * [http://www.yagarto.de/ Yagarto(arm-none-eabi-gcc) arm的开发工具链]
+ * [http://opensource.zylin.com/embeddedcdt.html zylincdt gdb调试插件]
