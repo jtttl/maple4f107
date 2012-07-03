@@ -7,7 +7,10 @@
 
 = Details =
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+先下载必备的工具
+ *eclipse cdt ： elipse 和 c++开发插件
+   * [http://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/juno/R/eclipse-cpp-juno-win32.zip 下载地址]
+
+arm-plugin
+Yagarto(arm-none-eabi-gcc)
+zylincdt
