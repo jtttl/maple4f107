@@ -6,6 +6,5 @@ eclipse cdt的默认设置并不是针对嵌入式开发，在开始使用前，
 
 
 == 工作环境配置说明 ==
- # [ http://www.chibios.org/dokuwiki/doku.php?id=chibios:guides:eclipse1 请参考英文版的安装说明]
- # [ http://www.chibios.org/dokuwiki/doku.php?id=chibios:guides:eclipse2 请参考英文版的使用说明]
-http://maple4f107.googlecode.com/files/img1.jpg
+ # [http://www.chibios.org/dokuwiki/doku.php?id=chibios:guides:eclipse1 请参考英文版的安装说明]
+ # [http://www.chibios.org/dokuwiki/doku.php?id=chibios:guides:eclipse2 请参考英文版的使用说明]
