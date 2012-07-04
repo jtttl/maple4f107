@@ -25,8 +25,8 @@ Sections:
 == 4、交叉工具链的安装和配置 ==
 
  == 交叉工具链有很多种可以供选择 ==
- * [http://gnuarmeclipse.livius.net/wiki/Main_Page#Supported_toolchains 可供支持的交叉工具链]
-
+ * [http://gnuarmeclipse.livius.net/wiki/Main_Page#Supported_toolchains 可供支持的交叉工具链]，这里还有一个[https://launchpad.net/gcc-arm-embedded gcc-arm-embedded]
+ 
  ** linux下选择 Sourcery CodeBench Lite ARM,但是下载起来挺麻烦的，这里有个下载地址是[http://static.leaflabs.com/pub/codesourcery/ leaflabs维护的分支]可以选择windows和linux下的版本。
  ** windows下选择 [http://www.yagarto.de/index.html yagarto]，因为yagaro现在不提供linux的版本了，你也可以自己去下载源代码编译。yagarto在windows下安装的时候，特别注意:安装目录中不用包含空格或中文。
  
