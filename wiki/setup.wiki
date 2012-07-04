@@ -18,10 +18,26 @@ Sections:
  eclipse cdt下载后，无需安装，解压后运行根目录下的eclipse.exe即可,为了支持arm的开发还需要做一些针对性的设置。请点击这里查看详细说明 [eclipsesetup eclipse cdt详细配置说明]
 ----
 == 3、arm插件的安装和配置 ==
+ # [http://gnuarmeclipse.livius.net/wiki/Plug-in_installation GNU ARM Eclipse Plug-in的安装方法]
+ # 看看[http://gnuarmeclipse.livius.net/wiki/Second_edition_roadmap 第二版的功能]，挺期待的。
+
 ----
-== 4、yagarto arm交叉工具链的安装和配置 ==
+== 4、交叉工具链的安装和配置 ==
+
+ == 交叉工具链有很多种可以供选择 ==
+ * [http://gnuarmeclipse.livius.net/wiki/Main_Page#Supported_toolchains 可供支持的交叉工具链]
+
+ ** linux下选择 Sourcery CodeBench Lite ARM,但是下载起来挺麻烦的，这里有个下载地址是[http://static.leaflabs.com/pub/codesourcery/ leaflabs维护的分支]可以选择windows和linux下的版本。
+ ** windows下选择 [http://www.yagarto.de/index.html yagarto]，因为yagaro现在不提供linux的版本了，你也可以自己去下载源代码编译。yagarto在windows下安装的时候，特别注意:安装目录中不用包含空格或中文。
+ 
+  ** 安装好了以后还需要设置环境变量，否则可能找不到工具链   
+  *** [http://gnuarmeclipse.livius.net/wiki/Toolchain_installation_on_Windows windows下设置环境变量] 
+  *** [http://gnuarmeclipse.livius.net/wiki/Toolchain_installation_on_Linux linux下设置环境变量]
 ----
 == 5、gdb调试插件zylicdt的安装和配置 ==
+----
+== 6、使用jlink进行调试 ==
+  # 这里详细的讲解了如何[http://gnuarmeclipse.livius.net/wiki/How_to_use_the_J-Link_probe_with_the_GDB_Server 使用jlink gdbserver进行调试]
 ----
 = 编译工程 =
 ----
